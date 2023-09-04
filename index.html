@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-EDGE" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="html, css, javascript" />
+    <meta name="author" content="Joel Anang" />
+    <title>Word Unscrambler</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+  </head>
+  <body oncontextmenu="return false">
+    <div id="container">
+      <h1>Word Unscrambler</h1>
+      <div id="word-container">
+        <p id="unscramble-word">
+          <span id="category">Category: </span><br />
+          <span><strong></strong> <span id="scrambled-word"></span></span>
+        </p>
+        <input type="text" id="user-input" placeholder="Enter your answer" />
+
+        <!-- Add a container for the buttons -->
+        <div id="button-container">
+          <button id="submit-button">Submit</button>
+          <button id="skip-button">Skip</button>
+          <button id="restart-button" style="display: none">Restart</button>
+        </div>
+
+        <!-- Display the score element initially -->
+        <p id="score">
+          Score: <span id="current-score">0</span>
+          <span id="total-words">0</span>
+        </p>
+
+        <!-- Add a container for the final score -->
+        <p id="final-score" style="display: none">
+          Final Score: <span id="final-score-value">0</span>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+    <!--Footer-->
+    <section class="footer">
+      <p>
+        All Rights Reserved &copy; <span id="currentYear"></span>
+        <a
+          href="https://jo-erl.github.io/joelanangportfolio/"
+          style="color: rgb(0, 255, 68)"
+          target="_blank"
+          >JoErl</a
+        >
+      </p>
+
+      <script>
+        // JavaScript to automatically update the year
+        document.getElementById("currentYear").textContent =
+          new Date().getFullYear();
+      </script>
+    </section>
+    <!--End of Footer-->
+  </body>
+</html>

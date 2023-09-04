@@ -1,0 +1,157 @@
+/*=============== GOOGLE FONTS [POPPINS] ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  background-image: url(unscrambler.jpg);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  user-select: none;
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none; /* For Firefox */
+}
+
+#container {
+  background-color: rgba(255, 255, 255, 0.144);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  backdrop-filter: blur(6px);
+  border: 1px solid #ffffffc4;
+}
+
+#container strong {
+  font-weight: bold;
+}
+#container h1 {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+h1 {
+  color: #333;
+}
+
+#word-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #000000e3;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid #6028007c;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button {
+  font-size: 16px;
+  padding: 5px 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #e3077c;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1d1d1d;
+}
+
+#score {
+  font-weight: 400;
+  color: #b4b4b4;
+}
+
+/* Create a nested flex container for buttons */
+#button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Reduce the gap between buttons */
+#skip-button,
+#submit-button {
+  display: inline-block;
+  padding: 10px;
+}
+
+/* Align "Skip" to the left and "Submit" to the right */
+#skip-button {
+  order: 1; /* Change the order to place it on the left */
+  margin-right: 10px; /* Add margin to create space between buttons */
+}
+
+#submit-button {
+  order: 2; /* Change the order to place it on the right */
+}
+
+/* Add styles for correct and incorrect messages */
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+#category strong {
+  color: #e3077c;
+}
+
+#scrambled-word strong {
+  color: #e3077c;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #000000c5;
+  position: absolute;
+  bottom: 0;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  padding: 0;
+  backdrop-filter: blur(6px);
+  border: 1px solid #ffffff27;
+}
+
+.footer p {
+  color: #aaaaaa;
+}
+
+#unscramble-word {
+  color: #fff;
+}
