@@ -20,7 +20,10 @@
   </head>
   <body oncontextmenu="return false">
     <div id="container">
-      <h1>Word Unscrambler</h1>
+      <h1>
+        <img src="logo.png" alt="Word Unscrambler Icon" style="width:183px; height:auto;" /> Unscrambler
+      </h1>
+      
       <div id="word-container">
         <p id="unscramble-word">
           <span id="category">Category: </span><br />
@@ -28,26 +31,22 @@
         </p>
         <input type="text" id="user-input" placeholder="Enter your answer" />
 
-        <!-- Add a container for the buttons -->
         <div id="button-container">
           <button id="submit-button">Submit</button>
           <button id="skip-button">Skip</button>
-          <button id="restart-button" style="display: none">Restart</button>
         </div>
-
-        <!-- Display the score element initially -->
-        <p id="score">
-          Score: <span id="current-score">0</span>
-          <span id="total-words">0</span>
-        </p>
-
-        <!-- Add a container for the final score -->
-        <p id="final-score" style="display: none">
-          Final Score: <span id="final-score-value">0</span>
-        </p>
+        
+        <!-- Add a score element -->
+<p id="current-score">Score: 0</p>
       </div>
     </div>
-    <script src="script.js"></script>
+
+    <!-- Add a div for the game over message within the container -->
+    <p id="game-over" style="display: none;">
+      Game Over! <strong>Refresh Page</strong>
+    </p>
+  </div>
+  <script src="script.js"></script>
 
     <!--Footer-->
     <section class="footer">

@@ -9,7 +9,6 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
   background-color: #f0f0f0;
   background-image: url(unscrambler.jpg);
   text-align: center;
@@ -40,12 +39,14 @@ body {
 }
 #container h1 {
   font-weight: bold;
-  color: #ffffff;
+  color: #ff7000;
 }
 
-h1 {
-  color: #333;
+/* Adjust the margin or padding between the scrambled-word and category */
+#scrambled-word, #category {
+  margin-bottom: -25px; /* Adjust the value to reduce or increase the space */
 }
+
 
 #word-container {
   margin-top: 20px;
@@ -78,18 +79,25 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #e3077c;
+  background-color: #ff7000;
   color: #fff;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #1d1d1d;
+  background-color: #000000;
+  color: #ff7000;
+  border-radius: 10px;
+
 }
 
-#score {
+#current-score {
   font-weight: 400;
   color: #b4b4b4;
+  background-color: #00000000;
+  padding: 0px 40px 0px 40px;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Create a nested flex container for buttons */
@@ -127,11 +135,12 @@ button:hover {
 }
 
 #category strong {
-  color: #e3077c;
+  color: #ff7000;
+ 
 }
 
 #scrambled-word strong {
-  color: #e3077c;
+  color: #ff7000;
 }
 
 .footer {
