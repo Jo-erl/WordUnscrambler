@@ -148,7 +148,7 @@ button:hover {
   text-align: center;
   padding: 10px 0;
   background-color: #000000c5;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   font-size: 14px;
   color: rgb(255, 255, 255);
