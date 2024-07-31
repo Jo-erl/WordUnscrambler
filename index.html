@@ -21,9 +21,14 @@
   <body oncontextmenu="return false">
     <div id="container">
       <h1>
-        <img src="logo.png" alt="Word Unscrambler Icon" style="width:183px; height:auto;" /> Unscrambler
+        <img
+          src="logo.png"
+          alt="Word Unscrambler Icon"
+          style="width: 183px; height: auto"
+        />
+        Unscrambler
       </h1>
-      
+      <!--=======================================================-->
       <div id="word-container">
         <p id="unscramble-word">
           <span id="category">Category: </span><br />
@@ -35,37 +40,27 @@
           <button id="submit-button">Submit</button>
           <button id="skip-button">Skip</button>
         </div>
-        
-        <!-- Add a score element -->
-<p id="current-score">Score: 0</p>
-      </div>
-    </div>
 
-    <!-- Add a div for the game over message within the container -->
-    <p id="game-over" style="display: none;">
-      Game Over! <strong>Refresh Page</strong>
-    </p>
-  </div>
-  <script src="script.js"></script>
+        <!-- Add a score element -->
+        <p id="current-score">Score: 0</p>
+      </div>
+      <!--=======================================================-->
+      <p id="game-over" style="display: none">
+        Game Over! <strong>Refresh Page</strong>
+      </p>
+    </div>
+    <!--=======================================================-->
+    <script src="script.js"></script>
 
     <!--Footer-->
     <section class="footer">
-      <p>
-        All Rights Reserved &copy; <span id="currentYear"></span>
-        <a
-          href="https://jo-erl.github.io/joelanangportfolio/"
-          style="color: rgb(0, 255, 68)"
-          target="_blank"
-          >JoErl</a
-        >
-      </p>
-
+      <!--
       <script>
         // JavaScript to automatically update the year
         document.getElementById("currentYear").textContent =
           new Date().getFullYear();
       </script>
+      -->
     </section>
-    <!--End of Footer-->
   </body>
 </html>

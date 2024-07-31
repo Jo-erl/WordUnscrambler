@@ -1,13 +1,29 @@
-/*=============== GOOGLE FONTS [POPPINS] ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/*FONTS*/
+@font-face {
+  font-family: "MTNBrighterSans";
+  src: url("ttf/MTNBrighterSans-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular weight */
+}
 
+@font-face {
+  font-family: "MTNBrighterSans";
+  src: url("ttf/MTNBrighterSans-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium weight */
+}
+
+@font-face {
+  font-family: "MTNBrighterSans";
+  src: url("ttf/MTNBrighterSans-ExtraBold.ttf") format("truetype");
+  font-weight: 700; /* Extra weight */
+}
+/*=======================================================*/
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "MTNBrighterSans", sans-serif;
   box-sizing: border-box;
 }
-
+/*=======================================================*/
 body {
   background-color: #f0f0f0;
   background-image: url(unscrambler.jpg);
@@ -23,7 +39,7 @@ body {
   -webkit-user-select: none; /* For Safari */
   -moz-user-select: none; /* For Firefox */
 }
-
+/*=======================================================*/
 #container {
   background-color: rgba(255, 255, 255, 0.144);
   border-radius: 15px;
@@ -34,21 +50,21 @@ body {
   backdrop-filter: blur(6px);
   border: 1px solid #ffffffc4;
 }
-
+/*=======================================================*/
 #container strong {
   font-weight: bold;
 }
+/*=======================================================*/
 #container h1 {
   font-weight: bold;
   color: #ff7000;
 }
-
-/* Adjust the margin or padding between the scrambled-word and category */
-#scrambled-word, #category {
-  margin-bottom: -25px; /* Adjust the value to reduce or increase the space */
+/*=======================================================*/
+#scrambled-word,
+#category {
+  margin-bottom: -25px;
 }
-
-
+/*=======================================================*/
 #word-container {
   margin-top: 20px;
   padding: 20px;
@@ -58,12 +74,12 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
+/*=======================================================*/
 p {
   font-size: 18px;
   margin: 10px 0;
 }
-
+/*=======================================================*/
 input[type="text"] {
   width: 100%;
   padding: 5px;
@@ -72,7 +88,7 @@ input[type="text"] {
   border-radius: 5px;
   margin-top: 10px;
 }
-
+/*=======================================================*/
 button {
   font-size: 16px;
   padding: 5px 8px;
@@ -84,14 +100,13 @@ button {
   color: #fff;
   transition: background-color 0.3s ease;
 }
-
-button:hover {
+/*=======================================================*/
+/*button:hover {
   background-color: #000000;
   color: #ff7000;
   border-radius: 10px;
-
-}
-
+}*/
+/*=======================================================*/
 #current-score {
   font-weight: 400;
   color: #b4b4b4;
@@ -100,50 +115,45 @@ button:hover {
   justify-content: center;
   text-align: center;
 }
-
-/* Create a nested flex container for buttons */
+/*=======================================================*/
 #button-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
 }
-
-/* Reduce the gap between buttons */
+/*=======================================================*/
 #skip-button,
 #submit-button {
   display: inline-block;
   padding: 10px;
 }
-
-/* Align "Skip" to the left and "Submit" to the right */
+/*=======================================================*/
 #skip-button {
-  order: 1; /* Change the order to place it on the left */
-  margin-right: 10px; /* Add margin to create space between buttons */
+  order: 1;
+  margin-right: 10px;
 }
-
+/*=======================================================*/
 #submit-button {
-  order: 2; /* Change the order to place it on the right */
+  order: 2;
 }
-
-/* Add styles for correct and incorrect messages */
+/*=======================================================*/
 .correct {
   color: green;
 }
-
+/*=======================================================*/
 .incorrect {
   color: red;
 }
-
+/*=======================================================*/
 #category strong {
   color: #ff7000;
- 
 }
-
+/*=======================================================*/
 #scrambled-word strong {
   color: #ff7000;
 }
-
+/*=======================================================*/
 .footer {
   width: 100%;
   text-align: center;
@@ -157,11 +167,12 @@ button:hover {
   backdrop-filter: blur(6px);
   border: 1px solid #ffffff27;
 }
-
+/*=======================================================*/
 .footer p {
   color: #aaaaaa;
 }
-
+/*=======================================================*/
 #unscramble-word {
   color: #fff;
 }
+/*=======================================================*/
